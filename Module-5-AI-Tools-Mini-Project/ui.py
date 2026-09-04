@@ -364,18 +364,18 @@ def configure_page():
             background: rgba(10, 16, 22, 0.42);
         }
         div[data-testid="stTextArea"] {
-            margin-top: 1.8rem;
-            padding: 1.25rem 1.35rem 1.1rem;
+            margin-top: 1.25rem;
+            padding: 0.85rem 1rem 0.75rem;
             border: 1px solid rgba(156, 168, 184, 0.2);
-            border-radius: 16px;
+            border-radius: 12px;
             background: rgba(19, 28, 37, 0.7);
         }
         div[data-testid="stTextArea"] textarea {
-            min-height: 155px;
+            min-height: 82px;
             border: 0;
             background: transparent;
-            font-size: 1.02rem;
-            line-height: 1.6;
+            font-size: 0.95rem;
+            line-height: 1.45;
         }
         div[data-testid="stTextArea"] textarea:focus {
             border: 0;
@@ -461,7 +461,7 @@ def configure_page():
         div[data-testid="stTextArea"] {
             border-color: #d3dfda;
             background: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 12px 30px rgba(42, 73, 64, 0.06);
+            box-shadow: 0 6px 16px rgba(42, 73, 64, 0.05);
         }
         div[data-testid="stTextArea"] textarea { color: #1d2b2a; }
         .prompt-hint { color: #788782; }
@@ -570,9 +570,6 @@ def render_bento_grid():
         key="task_mode",
         label_visibility="collapsed",
     )
-    selected_index = options.index(selected)
-    with st.expander("View details"):
-        st.caption(cards[selected_index][3])
 
 
 def render_controls():
@@ -583,7 +580,7 @@ def render_controls():
 
     topic = st.text_area(
         "Topic or question",
-        height=140,
+        height=100,
         key="topic",
         label_visibility="collapsed",
         placeholder="What do you want to understand today?",

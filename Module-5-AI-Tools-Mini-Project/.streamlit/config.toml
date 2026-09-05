@@ -1,0 +1,13 @@
+[server]
+fileWatcherType = "none"
+
+[client]
+toolbarMode = "minimal"
+
+[theme]
+base = "light"
+primaryColor = "#148f83"
+backgroundColor = "#f7f8f3"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#1d2b2a"
+borderColor = "#d9e3de"
